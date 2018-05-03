@@ -49,7 +49,7 @@ try {
      * Создаю файл .flowconfig, если его ещё нет
      */
     if (!fs.existsSync('.flowconfig')) {
-        var rd = fs.createReadStream('./node_modules/flow-config-exness/.flowconfig');
+        var rd = fs.createReadStream('./node_modules/flow-config/.flowconfig');
         rd.on("error", function (err) {
             console.log(err);
         });
