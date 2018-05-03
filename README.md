@@ -27,14 +27,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).  
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
-### [0.1.3] - 2018-05-03
-* fix path typo
-
-### [0.1.2] - 2018-05-03
-* fix path typo
-
-### [0.1.1] - 2018-05-03
-* move jsonfile from peerDeps
+### [0.1.4] - 2018-05-03
+* fix path typos, take in account current scope
 
 ### [0.1.0] - 2018-05-02
 * add flow-bin [0.70.0](https://github.com/facebook/flow/releases/tag/v0.70.0)

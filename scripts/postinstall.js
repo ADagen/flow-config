@@ -19,7 +19,7 @@ try {
     if (packaged.scripts[FLOW]) {
         console.log(`Что-то уже добавлено в scripts.${FLOW}`);
     } else {
-        packaged.scripts[FLOW] = './node_modules/flow-config/node_modules/.bin/flow';
+        packaged.scripts[FLOW] = './node_modules/@dagen/flow-config/node_modules/.bin/flow';
     }
     if (packaged.scripts[FLOW_TYPED]) {
         console.log(`Что-то уже добавлено в scripts.${FLOW_TYPED}`);
@@ -29,7 +29,7 @@ try {
     if (packaged.scripts[FLOW_PRE]) {
         console.log(`Что-то уже добавлено в scripts.${FLOW_PRE}`);
     } else {
-        packaged.scripts[FLOW_PRE] = 'bash ./node_modules/flow-config/scripts/pre-commit';
+        packaged.scripts[FLOW_PRE] = 'bash ./node_modules/@dagen/flow-config/scripts/pre-commit';
     }
 
     /**
@@ -49,7 +49,7 @@ try {
      * Создаю файл .flowconfig, если его ещё нет
      */
     if (!fs.existsSync('.flowconfig')) {
-        var rd = fs.createReadStream('./node_modules/flow-config/.flowconfig');
+        var rd = fs.createReadStream('./node_modules/@dagen/flow-config/.flowconfig');
         rd.on("error", function (err) {
             console.log(err);
         });
