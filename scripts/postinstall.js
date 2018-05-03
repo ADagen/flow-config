@@ -8,7 +8,7 @@ const FLOW_TYPED = 'flow-typed';
 const PRE_COMMIT = 'pre-commit';
 
 try {
-    process.chdir('../../');
+    process.chdir('../../../');
     const packaged = jsonfile.readFileSync('package.json');
     console.log(`Opened: ${packaged.name}@${packaged.version}`);
 
