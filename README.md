@@ -9,11 +9,11 @@ Just my Flow config
 As we added Glow, we should update `package.json` scripts as noticed [here](https://github.com/thejameskyle/glow#usage).  
 This package enhanced with auto-added pre-commit hook, so you need just to install it:  
 ```
-yarn add -D flow-config
+yarn add -D @dagen/flow-config
 ```
 or
 ```
-npm i -SD flow-config
+npm i -SD @dagen/flow-config
 ```
 
 For flow coverage report just add command to package.json scripts:

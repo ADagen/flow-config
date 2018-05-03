@@ -1,5 +1,5 @@
 {
-  "name": "flow-config",
+  "name": "@dagen/flow-config",
   "version": "0.1.0",
   "description": "Dagen's Flow config",
   "repository": {
