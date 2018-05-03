@@ -1,0 +1,17 @@
+#!/bin/bash
+files=$(git status -s | grep -E '[AM?]+\s.+?\.js$' | grep -v __tests__ | grep -v __mocks__ | cut -c3-)
+
+if [[ $files = "" ]] ; then
+  exit 0
+fi
+
+failed=0
+./node_modules/.bin/glow focus-check $files
+if [[ $? != 0 ]] ; then
+  failed=1
+fi
+
+if [[ $failed != 0 ]] ; then
+  echo "Flow check failed, commit denied"
+  exit $failed
+fi

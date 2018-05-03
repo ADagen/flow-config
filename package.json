@@ -1,0 +1,28 @@
+{
+  "name": "flow-config",
+  "version": "0.1.0",
+  "description": "Dagen's Flow config",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ADagen/flow-config.git"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "jsonfile": "4.0.0"
+  },
+  "dependencies": {
+    "flow-bin": "0.70.0",
+    "pre-commit": "1.2.2",
+    "glow": "1.2.2",
+    "flow-coverage-report": "0.5.0"
+  },
+  "peerDependencies": {
+    "jsonfile": "4.0.0"
+  },
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.js"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
